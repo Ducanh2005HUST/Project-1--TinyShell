@@ -1,10 +1,9 @@
-## Project
+## Project 1 :Tiny Shell
 
 **Giảng viên hướng dẫn:** Phạm Đăng Hải  
 **Học phần:** Nguyên lý hệ điều hành  
 **Mã học phần:** IT3070  
 **Mã lớp:** 151957
-**Tên project:** Tiny Shell
 
 **Mục Đích của Dự Án:**  
 - Nghiên cứu các API quản lý tiến trình trong Windows
