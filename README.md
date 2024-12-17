@@ -33,6 +33,7 @@ https://github.com/Ducanh2005HUST/Project-1--TinyShell/blob/main/main.c
 
 - [CreateProcess](https://learn.microsoft.com/en-us/windows/win32/procthread/creating-processes)
 - [Tlhelp32.h HEADER](https://learn.microsoft.com/en-us/windows/win32/api/tlhelp32/)
+- [createtoolhelp32snapshot](https://learn.microsoft.com/en-us/windows/win32/api/tlhelp32/nf-tlhelp32-createtoolhelp32snapshot)
 - [Scanning Directories](https://eslinuxprogramming.blogspot.com/2015/05/scanning-directories.html)
 - [List Files and Directories](https://www.geeksforgeeks.org/c-program-list-files-sub-directories-directory/)
 - [References](https://phantrung.files.wordpress.com/2017/01/bt-hdh-tuan-2.pdf)
