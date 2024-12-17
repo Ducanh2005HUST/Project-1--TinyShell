@@ -24,8 +24,9 @@
 
 1. Tải mã nguồn về máy
 https://github.com/Ducanh2005HUST/Project-1--TinyShell/blob/main/main.c
-2. Run sau đó nhập `dir` để kiểm tra để đúng thư mục
-3. Sử dụng lệnh `help` để xem chi tiết các chức năng
+2. Mở CodeBlock sau đó Run
+3. Nhập `dir` để kiểm tra để đúng thư mục
+4. Sử dụng lệnh `help` để xem chi tiết các chức năng
 
 ## Document
 
