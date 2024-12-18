@@ -24,7 +24,7 @@ typedef struct {
 Process process_list[100];
 int process_count = 0;
 
-// Prototype các hàm
+// Danh sách các hàm
 void shell_loop();
 void execute_command(char *cmd);
 void handle_foreground(char *cmd, char **args);
@@ -49,33 +49,24 @@ void handle_signals(int sig) {
         printf("\nSignal SIGINT received. Type 'exit' to quit.\n");
     }
 }
-
-// Hàm hiển thị vòng lặp nhận lệnh
 void shell_loop() {
     char cmd[MAX_CMD_LEN];
     char *args[MAX_ARGS];
 
     while (1) {
-        // Hiển thị prompt
         printf("myShell> ");
         fflush(stdout);
 
-        // Đọc lệnh từ người dùng
         if (!fgets(cmd, MAX_CMD_LEN, stdin)) break;
-        cmd[strcspn(cmd, "\n")] = 0; // Xóa ký tự '\n'
-
-        // Nếu không nhập gì, tiếp tục
+        cmd[strcspn(cmd, "\n")] = 0; 
         if (strlen(cmd) == 0) continue;
 
-        // Tách lệnh thành các từ
         int i = 0;
         args[i] = strtok(cmd, " ");
         while (args[i] != NULL) {
             i++;
             args[i] = strtok(NULL, " ");
         }
-
-        // Kiểm tra lệnh đặc biệt (exit, help, ...)
         if (strcmp(args[0], "exit") == 0) break;
         //Biểu thị các chức năng
         if (strcmp(args[0], "help") == 0) {
@@ -367,7 +358,6 @@ void print_date() {
     time(&t);
     tm_info = localtime(&t);
 
-    // Hiển thị ngày theo định dạng DD-MM-YYYY
     printf("Current date: %02d-%02d-%04d\n", tm_info->tm_mday, tm_info->tm_mon + 1, tm_info->tm_year + 1900);
 }
 
@@ -378,8 +368,6 @@ void print_time() {
 
     time(&t);
     tm_info = localtime(&t);
-
-    // Hiển thị thời gian theo định dạng HH:MM:SS
     printf("Current time: %02d:%02d:%02d\n", tm_info->tm_hour, tm_info->tm_min, tm_info->tm_sec);
 }
 
