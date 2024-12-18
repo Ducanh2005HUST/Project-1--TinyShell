@@ -58,7 +58,7 @@ void shell_loop() {
         fflush(stdout);
 
         if (!fgets(cmd, MAX_CMD_LEN, stdin)) break;
-        cmd[strcspn(cmd, "\n")] = 0; 
+        cmd[strcspn(cmd, "\n")] = 0;
         if (strlen(cmd) == 0) continue;
 
         int i = 0;
@@ -85,10 +85,7 @@ void shell_loop() {
             printf("<command>       : Run a command in the foreground (e.g., notepad.exe).\n");
             printf("=========================\n\n");
     continue;
-}
-
-            continue;
-        } else if (strcmp(args[0], "date") == 0) {
+}else if (strcmp(args[0], "date") == 0) {
             print_date();
             continue;
         } else if (strcmp(args[0], "time") == 0) {
@@ -396,3 +393,5 @@ int main() {
     shell_loop();
     return 0;
 }
+
+
